@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <img  src="./image/ME-removebg-preview__1_-removebg-preview.png" alt=""  id="image-me" width="700px">
+        <div class="container">
+            <!-- <img  src="./image/ME-removebg-preview (1).png" alt=""  id="image-me" width="700px"> -->
+            <div id="fixed">
+            <nav >
+                <img src="./image/logo.png" alt="" class="logo">
+                <ul id="nav-left">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>                        
+                </ul>
+            </nav>
+        </div>
+            <div class="header-text">
+                <p>Hi, I'm</p>
+                <h1> <span> Chitranjan Kumar</span>   from <br> Noida ,Delhi
+                </h1>
+                <br><p>And I'm <span>Full Stack</span> Web Developer</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="boder"></div>
+    <div id="about">
+        <div class="about-sec">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="./image/IMG_20250501_190345-removebg-preview.png" alt="" width="500px" height="700px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-title2">I am based in Noida, Sector 44. I completed my schooling from the Bihar School Examination Board in Patna and earned a BCA degree from Veer Kunwar Singh University. Currently, I am pursuing a Full Stack Web Development course.
+                I have worked with frontend technologies like HTML, CSS, JavaScript, and React, as well as backend tools like JavaScript and Node.js. I enjoy building responsive, user-friendly web applications and constantly improving my skills.
+                I am looking for a Full Stack Web Development role where I can apply my knowledge, work on exciting projects, and continue growing in the field.</p>
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="opentab('skill')">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('education')"> Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skill">
+                    <ul>
+                        <li><span>Front-End  :-</span> <br> <br>    HTML5, CSS, JavaScript(ES6+), React</li>
+                        <li><span>Framework :-</span> <br > <br>Bootstrap, Tailwind</li>
+                        <li><span>Tool :-</span> <br> <br>Git</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>2024 - Current :-</span> <br> <br> Full Stack Web Development-Training (Ongoing) <br>
+                            <i>CETPA Infotech Pvt. Ltd.</i>  
+                        </li>
+                        <li><span>12/2024-current</span> <br > <br>Frontend Developer Intern (Ongoing) <br> <i>CETPA Infotech Pvt. Ltd.</i> </li>
+                        
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span> <br> <br>Full Stack Web Design</li>
+                        <li><span>2024</span> <br > <br>BCA <br> from Veer Kunwar Singh University</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+<!-- --------------------------Service---------------------- -->
+ <div id="service" >
+ <div class="containers">
+    <h1 class="sub-title">My Selected Project</h1>
+    <div class="services-list">
+        <div >
+            <h2>INDEPENDECE DAY Project</h2>
+            <video src="./image/Video1.mp4"  autoplay muted loop  width="440px"></video>
+            <a href="#">lorn more</a>
+        </div><div>
+            <h2>Web Design</h2>
+            <video src="./image/Video2.mp4"  autoplay muted loop  width="440px"></video>
+            <a href="#">lorn more</a>
+        </div >
+        <div id="back">
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur voluptas vel assumenda deleniti distinctio! Hic vitae reprehenderit cumque culpa itaque expedita perspiciatis ipsum dolores esse. Quo adipisci magnam vitae!</p>
+            <a href="#">lorn more</a>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+ </div>
+</div>
+<!-- -----------------contact--------------- -->
+<div class="contact">
+    <div class="containers">
+        <div class="row">
+            <div class="contant-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><img src="./image/gmail.png" alt="" width="50px"> <span class="email-phone">chitranjan75075@gmail.com </span></p>
+               <p> <img src="./image/smartphone-call.png" alt="" width="50px"> <span class="email-phone">9905250848 </span></p>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/"><img src="./image/instagram.png" alt="" width="50px"></a>
+                    <a href="https://www.instagram.com/"><img src="./image/connection.png" alt="" width="50px"></a>
+                    <a href="https://www.instagram.com/"><img src="./image/github.png" alt="" width="50px"></a>
+                </div>
+                <a href="./image/CHITRANJAN KUMAR.pdf" download class="btn btn2" >Download Cv</a>
+            </div>
+            <div class="contant-right">
+                <form >
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="7" placeholder="your message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class=" ">
+        <p>Thanks for visiting my Portfolio !</p>
+    </div>
+</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
