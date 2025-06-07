@@ -6,42 +6,56 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+ 
+ 
+
 </head>
 <body>
     <div id="header">
-        <img  src="./image/ME-removebg-preview__1_-removebg-preview.png" alt=""  id="image-me" width="700px">
+        <div>
+        <img  src="./image/ME-removebg-preview__1_-removebg-preview.png" alt=""  id="image-me" width="400px">
+        </div>
         <div class="container">
             <!-- <img  src="./image/ME-removebg-preview (1).png" alt=""  id="image-me" width="700px"> -->
             <div id="fixed">
             <nav >
-                <img src="./image/logo.png" alt="" class="logo">
+                <img src="./image/logo.png" alt="" class="logo" width="130px">
                 <ul id="nav-left">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>                        
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="./image/CHITRANJAN KUMAR.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contacts">Contact</a></li>                        
                 </ul>
             </nav>
         </div>
-            <div class="header-text">
+            <div class="header-text" class="flex flex-col md:flex-row items-center justify-between px-4 py-8 gap-4">
                 <p>Hi, I'm</p>
-                <h1> <span> Chitranjan Kumar</span>   from <br> Noida ,Delhi
+                <h1> <span> Chitranjan Kumar</span>   from <br> Noida
                 </h1>
-                <br><p>And I'm <span>Full Stack</span> Web Developer</p>
+                <p>And I'm <span id="element"></span> </p>
                 
+                <div>
+                <a href="#contant-rights" class="btn btn2" >hire me</a>&emsp; &emsp; &emsp; &emsp; 
+                <a href="./image/CHITRANJAN KUMAR.pdf" target="_blank" class="btn btn2" id="Resume" download="" >Download CV</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="boder"></div>
     <div id="about">
+        <h1 class="sub-title">About Me</h1>
         <div class="about-sec">
             <div class="row">
+                
             <div class="about-col-1">
-                <img src="./image/IMG_20250501_190345-removebg-preview.png" alt="" width="500px" height="700px">
+                <img src="./image/png 2.png" alt="" width="500px" height="500px">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
+                
                 <p class="sub-title2">I am based in Noida, Sector 44. I completed my schooling from the Bihar School Examination Board in Patna and earned a BCA degree from Veer Kunwar Singh University. Currently, I am pursuing a Full Stack Web Development course.
                 I have worked with frontend technologies like HTML, CSS, JavaScript, and React, as well as backend tools like JavaScript and Node.js. I enjoy building responsive, user-friendly web applications and constantly improving my skills.
                 I am looking for a Full Stack Web Development role where I can apply my knowledge, work on exciting projects, and continue growing in the field.</p>
@@ -79,60 +93,262 @@
 
         </div>
     </div>
-<!-- --------------------------Service---------------------- -->
- <div id="service" >
- <div class="containers">
-    <h1 class="sub-title">My Selected Project</h1>
-    <div class="services-list">
-        <div >
-            <h2>INDEPENDECE DAY Project</h2>
-            <video src="./image/Video1.mp4"  autoplay muted loop  width="440px"></video>
-            <a href="#">lorn more</a>
-        </div><div>
-            <h2>Web Design</h2>
-            <video src="./image/Video2.mp4"  autoplay muted loop  width="440px"></video>
-            <a href="#">lorn more</a>
-        </div >
-        <div id="back">
-            <h2>Web Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur voluptas vel assumenda deleniti distinctio! Hic vitae reprehenderit cumque culpa itaque expedita perspiciatis ipsum dolores esse. Quo adipisci magnam vitae!</p>
-            <a href="#">lorn more</a>
-        </div>
+<!----------------------------Project------------------------>
+ <section class="work section" id="project">
+    <h2 class="section-tittle">PROJECT</h2>
+    <div class="containere">
+        <ul class="work-list ">
+            <li class="work-item active-link1" onclick="opentab1('all')" >All</li>
+            <li class="work-item" onclick="opentab1('selected')">Selected Project</li>
+            <li class="work-item" onclick="opentab1('html')">HTML,CSS</li>
+            <li class="work-item" onclick="opentab1('js')">JavaScript</li>
+            <li class="work-item" onclick="opentab1('react.js')">React.js</li>
+        </ul>
+        <hr>
+    </div >
+    <!----------------------------------------CARD-------------------------->
+     
+     <div class="all-card active-tab1 " id="all">
+     
+     <div class="card ">
+    <img src="./image/img1.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Traveling</h3>
+      <p class="card-text">This is an informational web page that provides a brief overview of notable places in the Sahara Desert.
+.</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/CSS-A6/ae7e25073dfb952facb7a11667d620a8142f8bca/index.html" class="card-button" target="_blank">Live link</a>
     </div>
-    <a href="#" class="btn">See More</a>
- </div>
+   </div> 
+    <div class="card">
+    <img src="./image/img2.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Independence  Animation</h3>
+      <p class="card-text">Created an animated highway and city scene with a moving car and rotating wheels using CSS.</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/CSS-A5/35ec44aeee3010a839684985e34d944f53fa1c16/index2.html" class="card-button">Live link</a>
+    </div>
+  </div> <div class="card">
+    <img src="./image/Screenshot (45).png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Alarm Clock </h3>
+      <p class="card-text">Built a JavaScript alarm clock with real-time display and dynamic day-phase transitions.
+</p>
+      <a href="https://malarmclock.netlify.app/" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div>
+ 
+   <div class="card ">
+    <img src="./image/img3.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Task List</h3>
+      <p class="card-text">A task list is a web page feature that is structured using HTML and is designed and laid out in a way</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/CSS-Project/f3668435c77acc3419ba59da8361467f9340aab8/index.html" class="card-button" target="_blank">Live link</a>
+    </div>
+   </div>
+    <div class="card">
+    <img src="./image/img4.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">GruGo</h3>
+      <p class="card-text">GruGo is a food delivery app that lets users  order food online, and enjoy fast doorstep delivery.
+</p>
+      <a href="#" class="card-button">Live link</a>
+    </div>
+  </div> <div class="card">
+    <img src="./image/img5.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">FoodJoint</h3>
+      <p class="card-text">FoodJoint is an online platform to discover restaurants, view menus, and order food for home delivery
+</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/FoodJoint/0de6d7a1fc99229eb67abf55f23606eb6c389288/test/index.html" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div> 
+   
+  </div>
+  
+  </div>
+  
 </div>
+<!-- -----------------------------------demo------------------ -->
+
+<!-- ---------------------------selected project---------------- -->
+ <div class="all-card" id="selected">
+   <div class="card">
+    <img src="./image/img5.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">FoodJoint</h3>
+      <p class="card-text">FoodJoint is an online platform to discover restaurants, view menus, and order food for home delivery
+</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/FoodJoint/0de6d7a1fc99229eb67abf55f23606eb6c389288/test/index.html" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="./image/img4.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">GruGo</h3>
+      <p class="card-text">GruGo is a food delivery app that lets users  order food online, and enjoy fast doorstep delivery.
+</p>
+      <a href="#" class="card-button">Live link</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./image/Screenshot (45).png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Alarm Clock </h3>
+      <p class="card-text">Built a JavaScript alarm clock with real-time display and dynamic day-phase transitions.
+</p>
+      <a href="https://malarmclock.netlify.app/" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div>
+  
+ </div>
+ <!-- ----------------------------------html csss--------------------------- -->
+   <div class="all-card" id="html">
+   <div class="card">
+    <img src="./image/Screenshot 2025-06-07 225702.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Web PPT</h3>
+      <p class="card-text">This is a web ppt made from HTML.</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/Project1/0a18fc2afaff62d458a4f0cb057bce3657806ac8/index.html" class="card-button">Live link</a>
+    </div>
+  </div>
+   <div class="card ">
+    <img src="./image/img3.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Task List</h3>
+      <p class="card-text">A task list is a web page feature that is structured using HTML and is designed and laid out in a way</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/CSS-Project/f3668435c77acc3419ba59da8361467f9340aab8/index.html" class="card-button" target="_blank">Live link</a>
+    </div>
+   </div>
+   <div class="card">
+    <img src="./image/img2.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Independence  Animation</h3>
+      <p class="card-text">Created an animated highway and city scene with a moving car and rotating wheels using CSS.</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/CSS-A5/35ec44aeee3010a839684985e34d944f53fa1c16/index2.html" class="card-button">Live link</a>
+    </div>
+  </div> 
+ </div>
+ <!-- ---------------------------javascript------------------------ -->
+   <div class="all-card" id="js">
+    <div class="card">
+    <img src="./image/Screenshot (45).png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Alarm Clock </h3>
+      <p class="card-text">Built a JavaScript alarm clock with real-time display and dynamic day-phase transitions.
+</p>
+      <a href="https://malarmclock.netlify.app/" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div>
+     <div class="card">
+    <img src="./image/img5.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">FoodJoint</h3>
+      <p class="card-text">FoodJoint is an online platform to discover restaurants, view menus, and order food for home delivery
+</p>
+      <a href="https://rawcdn.githack.com/developer-maurya/FoodJoint/0de6d7a1fc99229eb67abf55f23606eb6c389288/test/index.html" class="card-button" target="_blank">Live link</a>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="./image/img6.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">To Do List</h3>
+      <p class="card-text">This is a To-Do List app where you can add new tasks and delete them with a single click.</p>
+      <a href="#" class="card-button">Live link</a>
+    </div>
+  </div>
+ </div>
+ <!-- ----------------------------------react.js------------------------ -->
+   <div class="all-card" id="react.js">
+    <div class="card">
+    <img src="./image/img4.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">GruGo</h3>
+      <p class="card-text">GruGo is a food delivery app that lets users  order food online, and enjoy fast doorstep delivery.
+</p>
+      <a href="#" class="card-button">Live link</a>
+    </div>
+  </div>
+   <div class="card">
+    <img src="./image/img7.png" alt="Card Image">
+    <div class="card-body">
+      <h3 class="card-title">Ev-olution</h3>
+      <p class="card-text">This page uses a background video with overlay text and navigation to create a modern landing screen.</p>
+      <a href="https://eact1.netlify.app/" class="card-button">Live link</a>
+    </div>
+  </div> 
+  
+ </div>
+
+ </section>
 <!-- -----------------contact--------------- -->
-<div class="contact">
+<div class="contact" id="contacts">
     <div class="containers">
         <div class="row">
             <div class="contant-left">
-               <h1 class="sub-title">Contact Me</h1>
-               <p><img src="./image/gmail.png" alt="" width="50px"> <span class="email-phone">chitranjan75075@gmail.com </span></p>
-               <p> <img src="./image/smartphone-call.png" alt="" width="50px"> <span class="email-phone">9905250848 </span></p>
-                <div class="social-icon">
-                    <a href="https://www.instagram.com/"><img src="./image/instagram.png" alt="" width="50px"></a>
-                    <a href="https://www.instagram.com/"><img src="./image/connection.png" alt="" width="50px"></a>
-                    <a href="https://www.instagram.com/"><img src="./image/github.png" alt="" width="50px"></a>
-                </div>
-                <a href="./image/CHITRANJAN KUMAR.pdf" download class="btn btn2" >Download Cv</a>
-            </div>
-            <div class="contant-right">
-                <form >
-                    <input type="text" name="name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="message" rows="7" placeholder="your message" ></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+               <h1 class="sub-title">Contact</h1>
+            
+            <div class="contant-right" id="contant-rights">
+                <form class="from-card"> 
+                  <div class="input-card">
+                    <input type="text" name="name" placeholder="Name" required> <input type="text" name="name" placeholder="Email" required>  </div>
+                    <input type="email" name="email" placeholder="Subject" required>
+                    <textarea name="message" rows="7" placeholder="Message" ></textarea>
+                    <button type="submit" class="btn btn2" id="button-m">Send Message</button>
                 </form>
             </div>
         </div>
 
     </div>
-    <div class=" ">
-        <p>Thanks for visiting my Portfolio !</p>
-    </div>
+    <!-- -------------------------------footer------------------- -->
+     
+ </div>
 </div>
+<div class="thanks">
+  <div class="contact-header">
+    
+    <h1>Contact us</h1>
+   
+  </div>
+  <footer>
+    <div class="footer-container">
 
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3 id="text-c">Thanks for visiting my portfio®</h3>
+      </div>
+
+      <!-- Column 2: London -->
+      <div class="footer-column">
+        <h3 id="text-c">ADDRESS</h3>
+
+        <p>Noida<br>
+        Sector-44<br>
+        Uttar Pradesh</p>
+        <a href="https://www.google.com/maps/@28.5596354,77.3409781,16z?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot" target="_blank" ></i> SEE ON MAP ↗</a>
+      </div>
+
+      <!-- Column 3: Buenos Aires -->
+      <div class="footer-column">
+        <h3 id="text-c">CONTACT</h3>
+        <a href="chitranjan75075@gmail.com"><i class="fa-solid fa-envelope"></i> chitranjan75075@gmail.com</a><br>
+        <a href="#"><i class="fa-solid fa-phone"></i> 9905250848</a><br>
+       
+        
+      </div>
+
+      <!-- Column 4: Newsletter & Social -->
+      <div class="footer-column">
+        <h3 id="text-c">You can review my Linkedln and GitHub profiles before making a hiring decision</h3>
+               <h3 style="margin-top: 20px;" id="text-c">FOLLOW US</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/chitranjanmaurya123/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://github.com/developer-maurya" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.linkedin.com/in/chitranjan-kumar-911219339/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </footer></div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
 </body>
-</html>
+</html>  
