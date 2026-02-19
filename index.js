@@ -33,3 +33,38 @@ function opentab1(work){
     event.currentTarget.classList.add("active-link1")
     document.getElementById(work).classList.add("active-tab1")
 }
+// -----Email----
+<script>
+  const form = document.getElementById("contactForm");
+  const messageBox = document.getElementById("formMessage");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      messageBox.style.display = "block";
+      messageBox.style.background = "#d4edda";
+      messageBox.style.color = "#155724";
+      messageBox.style.padding = "10px";
+      messageBox.style.borderRadius = "5px";
+      messageBox.innerHTML = "✅ Your message has been sent successfully!";
+      form.reset();
+    } else {
+      messageBox.style.display = "block";
+      messageBox.style.background = "#f8d7da";
+      messageBox.style.color = "#721c24";
+      messageBox.style.padding = "10px";
+      messageBox.style.borderRadius = "5px";
+      messageBox.innerHTML = "❌ Something went wrong. Please try again.";
+    }
+  });
+</script>
