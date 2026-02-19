@@ -283,23 +283,43 @@
  </section>
 <!-- -----------------contact--------------- -->
 <div class="contact" id="contacts">
-    <div class="containers">
-        <div class="row">
-            <div class="contant-left">
-               <h1 class="sub-title">Contact</h1>
-            
-            <div class="contant-right" id="contant-rights">
-                <form class="from-card"> 
-                  <div class="input-card">
-                    <input type="text" name="name" placeholder="Name" required> <input type="text" name="name" placeholder="Email" required>  </div>
-                    <input type="email" name="email" placeholder="Subject" required>
-                    <textarea name="message" rows="7" placeholder="Message" ></textarea>
-                    <button type="submit" class="btn btn2" id="button-m">Send Message</button>
-                </form>
-            </div>
-        </div>
+  <div class="containers">
+    <div class="row">
+      <div class="contant-left">
+        <h1 class="sub-title">Contact</h1>
 
+        <div class="contant-right" id="contant-rights">
+          
+          <form class="from-card" id="contactForm">
+
+            <!-- Web3Forms Hidden Fields -->
+            <input type="hidden" name="access_key" value="1f1cfa14-a33e-487f-9ba0-44af6814394c">
+            <input type="hidden" name="subject" value="New Contact Message from Website">
+            <input type="hidden" name="from_name" value="SBM Website">
+
+            <div class="input-card">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <input type="text" name="service" placeholder="Subject" required>
+            <textarea name="message" rows="7" placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn btn2" id="button-m">
+              Send Message
+            </button>
+
+            <!-- Success Message -->
+            <div id="formMessage" style="display:none; margin-top:15px;"></div>
+
+          </form>
+
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
     <!-- -------------------------------footer------------------- -->
      
  </div>
